@@ -1,4 +1,4 @@
 # PokemonBaseStateBattle
 
 
-https://wupaulo.github.io/Paulo__Wu__Project_One/
+[Live Link](https://wupaulo.github.io/PokemonBaseStateBattle/)
