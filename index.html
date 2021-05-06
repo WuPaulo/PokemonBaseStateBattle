@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Battle</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-
-        <div class="heading">
-            <a class="icon" href=""><img src="./assets/pokeball.png"></a>
-            <h1>POKEMON STATS BATTLE</h1>
+      <div class="heading">
+        <div class="wrapper">
+          <a class="icon" href=""><img src="./assets/pokeball.png" /></a>
+          <h1>POKEMON STATS BATTLE</h1>
         </div>
-
-        <h2 class="rules">Rules: <br>1:Select two Pokemons based on their Id from #1-#898<br>2:Click the battle button and the victor will be decided base on their stats!<br>The results will show the pokemon name , their stat power and the overall winner.
-        </h2>
+      </div>
+      <div class="wrapper">
+        <div class="rules">
+          <p>Rules:</p>
+          <p>1:Select two Pokemons based on their Id from #1-#898</p>
+          <p>
+            2:Click the battle button and the victor will be decided base on
+            their stats!
+          </p>
+          <p>
+            The results will show the pokemon name , their stat power and the
+            overall winner.
+          </p>
+        </div>
 
         <div class="battle">
-            <div class="image-container">
-                <div><img class="pokemon1" src="./assets/pokeball.png" alt="picture of pokemon"/></div>
-                <div><img class="pokemon2" src="./assets/pokeball.png" alt="picture of pokemon"/></div>
+          <div class="image-container">
+            <div>
+              <img
+                class="pokemon1"
+                src="./assets/pokeball.png"
+                alt="picture of pokemon"
+              />
             </div>
-
-            <div class="top-container">
+            <div>
+              <img
+                class="pokemon2"
+                src="./assets/pokeball.png"
+                alt="picture of pokemon"
+              />
             </div>
+          </div>
 
-            <div class="bottom-container">
+          <div class="top-container"></div>
+
+          <div class="bottom-container"></div>
+
+          <form>
+            <div class="top-input">
+              <label for="choice1">Pokemon#1</label>
+              <input id="choice1" type="number" min="1" max="898" required />
             </div>
-
-            <form>
-                <div class="top-input">
-                    <label for="choice1">Pokemon#1</label>
-                    <input id="choice1" type="number" min="1" max="898" required>
-                </div>
-                <div class="bottom-input">
-                    <label for="choice2">Pokemon#2</label>
-                    <input id="choice2" type="number" min="1" max="898" required>
-                </div>
-                <input class="submit" type="image" src="assets/battleBtn.png" alt="Submit" name = "submit">
-            </form>
+            <div class="bottom-input">
+              <label for="choice2">Pokemon#2</label>
+              <input id="choice2" type="number" min="1" max="898" required />
+            </div>
+            <input
+              class="submit"
+              type="image"
+              src="assets/battleBtn.png"
+              alt="Submit"
+              name="submit"
+            />
+          </form>
         </div>
-
+      </div>
     </main>
-    
+
     <footer>
-        <p>Created At Juno College</p>
+      <p>Created At Juno College</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
