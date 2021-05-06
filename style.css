@@ -1,176 +1,456 @@
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
 
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
 
-html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-*, *:before, *:after {box-sizing: inherit}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body,
-p, 
+p,
 ul,
 h1,
 h2,
-h3{
-    margin: 0;
-    padding: 0;
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
-html,body{
-    max-width: 100%;
-    overflow-x: hidden;
-    width:100%;
-    height:100%;
-    font-family: 'Oswald', sans-serif;
-    
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
 }
 
-
-.heading{
-    height: 10%;
-    background:#e63946;
-    color:#f1faee;
-    text-align:center;
-    padding-top: 10px;
-    font-size: 2rem;
+.heading {
+  height: 10%;
+  background: #e63946;
+  color: #f1faee;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
 }
 
-.rules{
-    padding:5px;
-    margin-left: 20px;
-    color:rgb(255, 255, 255);
-    border:#e63946 solid 5px;
-    display:block;
-    border-radius: 10px;
-    width:50%;
-    background:#1d3557;
-    line-height: 1.4;
+.rules {
+  padding: 5px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  border: #e63946 solid 5px;
+  display: block;
+  border-radius: 10px;
+  width: 50%;
+  background: #1d3557;
+  line-height: 1.4;
 }
 
-label{
-    font-size: 2rem;
-    color:#e23e6c;
+label {
+  font-size: 2rem;
+  color: #e23e6c;
 }
 
-main{
-    height:100%;
-    background:url(./assets/poke_background.png);                              
-    background-size: 100% 100%;
-    position: relative;
+main {
+  height: 100%;
+  background: url(./assets/poke_background.png);
+  background-size: 100% 100%;
+  position: relative;
 }
 
-.submit{
-    width: 250px;
-    height:250px;
+.submit {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 43%;
+  top: 42%;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 5%;
+  top: 1%;
+}
+
+.pokemon-image1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 17%;
+  left: 68%;
+}
+
+.pokemon-image2 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -5%;
+  right: 65%;
+}
+
+.names {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pokemon1,
+.pokemon2 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+}
+
+.pokemon1 {
+  top: 30%;
+  left: 73%;
+}
+.pokemon2 {
+  bottom: 10%;
+  right: 73%;
+}
+
+.top-container {
+  background: #f1faee;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  top: 250px;
+  left: 5%;
+  border-radius: 50px;
+  border: solid 3px black;
+  font-size: 2rem;
+  display: none;
+}
+
+.bottom-container {
+  background: #f1faee;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  bottom: 30px;
+  right: 5%;
+  border-radius: 50px;
+  border: solid 5px black;
+  display: none;
+  font-size: 2rem;
+}
+
+.top-input {
+  position: absolute;
+  left: 14%;
+  top: 45%;
+}
+
+.bottom-input {
+  position: absolute;
+  right: 12%;
+  top: 73%;
+}
+
+.battlebtn {
+  position: absolute;
+  right: 47%;
+  top: 60%;
+}
+
+footer {
+  height: 5%;
+  background: #1d3557;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 5px;
+}
+
+.submit:hover {
+  opacity: 0.7;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+  .pokemon1,
+  .pokemon2 {
+    width: 200px;
+    height: 200px;
+  }
+  .submit {
+    width: 180px;
+    height: 180px;
     position: absolute;
-    left:43%;
-    top:42%;
+    left: 43%;
+    top: 42%;
+  }
+  .top-input {
+    left: 4%;
+    top: 51%;
+  }
+  .bottom-input {
+    right: 5%;
+  }
 }
 
-.icon img{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left:5%;
-    top:1%;
-}
-
-.pokemon-image1{
-    width: 500px;
-    height: 500px;
-    position:absolute;
-    top:17%;
-    left:68%;
-}
-
-.pokemon-image2{
-    width: 500px;
-    height: 500px;
-    position:absolute;
-    bottom:-5%;
-    right:65%;
-}
-
-.names{
-    text-align: center;
-    padding-top: 5px;
-}
-
-.pokemon1{
-    width: 250px;
-    height: 250px;
-    position:absolute;
-    top:30%;
-    left:73%;
-}
-.pokemon2{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom:10%;
-    right:73%;
-}
-
-
-.top-container{
-    background:#f1faee;
-    width: 500px;
+@media (max-width: 864px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  .rules {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+  .pokemon1,
+  .pokemon2 {
+    width: 170px;
+    height: 170px;
+  }
+  .submit {
+    width: 150px;
     height: 150px;
-    position: absolute;
-    top: 250px;
-    left:5%;
-    border-radius: 50px;
-    border: solid 3px black;
-    font-size:2rem;
-    display:none;
+  }
+  label {
+    font-size: 1.5rem;
+    color: #e23e6c;
+  }
 }
 
-.bottom-container{
-    background:#f1faee;
-    width: 500px;
-    height: 150px;
-    position: absolute;
-    bottom:30px;
-    right:5%;
-    border-radius: 50px;
-    border: solid 5px black;
-    display:none;
-    font-size:2rem;
+@media (max-width: 700px) {
+  .rules {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .pokemon1,
+  .pokemon2 {
+    width: 140px;
+    height: 140px;
+  }
+  .pokemon1 {
+    top: 40%;
+  }
+  .submit {
+    width: 120px;
+    height: 120px;
+  }
+  .top-input {
+    left: 4%;
+    top: 61%;
+  }
 }
-
-.top-input{
-    position: absolute;
-    left:14%;
-    top:45%;
-}
-
-.bottom-input{
-    position: absolute;
-    right:12%;
-    top:73%;
-}
-
-.battlebtn{
-    position:absolute;
-    right:47%;
-    top:60%;
-}
-
-footer{
-    height:5%;
-    background:#1d3557;
-    text-align: center;
-    font-size:1.5rem;
-    color: white;
-    padding-top: 5px;
-}
-
-.submit:hover{
-    opacity:0.7;
-}
-
-.icon:hover{
-    opacity:0.5;
-}
-
